@@ -1,0 +1,231 @@
+body {
+    background-color: rgb(231, 227, 227);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    color: #1e1e1e;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    color: rgb(30, 30, 30);
+}
+
+p {
+    color: #4e4e4e;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+}
+
+div i {
+    font-size: 40px;
+}
+@media screen and (max-width:992px) {
+    .drop-menu .dropdown-submenu {
+        left: 40%;
+    }
+
+    header h1 {
+        font-size: 45px;
+    }
+    #contact{
+        height: fit-content;
+    }
+    .contact-form
+    {
+        margin-top: 50px;
+    }
+    .touch
+    {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .drop-menu .dropdown-submenu {
+        left: 100%;
+    }
+    header h1 {
+        font-size: 72px;
+    }
+    .contact-form
+    {
+        margin-top:100px ;
+        margin-bottom: 100;
+    }
+    .touch
+    {
+        margin-top:100px ;
+        margin-bottom: 100;
+    }
+}
+
+/*start header*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+  li::after {
+    background-color: white;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.35s ease 0s;
+    position: absolute;
+  }
+  
+  li:hover::after {
+    width: 100%;
+  }
+/*start navbar*/
+.drop:hover .drop-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.drop-menu>li:hover>.dropdown-submenu {
+    display: block;
+}
+
+nav {
+    z-index: 100;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+nav .a2:hover {
+    color: rgb(0, 120, 255);
+}
+
+/*end navbar*/
+/*start section*/
+.console-underscore {
+    display: inline;
+}
+
+/*end section*/
+/*end header*/
+/*start about*/
+.about .contain-about {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+/*end about*/
+/*start services*/
+.contain-icon {
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+    transition: 1s;
+}
+
+.serves .serve:hover .contain-icon {
+    background-color: #0078FF;
+
+    box-shadow: 10px #1b85ff;
+}
+
+/*end services*/
+/*start count*/
+.count {
+    background-image: linear-gradient(rgba(0, 120, 255, .6), rgba(0, 120, 255, .6)), url(../images/counters-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*end count*/
+/*start portoflio*/
+.portfolio {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio img {
+    transition: 1s;
+}
+
+.portfolio .card:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+/*end portoflio*/
+/*start carousal*/
+.carous {
+    background-image: linear-gradient(rgba(0, 120, 255, .6), rgba(0, 120, 255, .6)), url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+/*end carousal*/
+/*starrt blog*/
+.card-body h5:hover, .card-footer .a1:hover {
+    color: rgb(0, 120, 255);
+}
+.card-footer1 img {
+    width: 12%;
+    border-radius: 50%;
+}
+/*end blog*/
+/*start contact*/
+#contact {
+    background-image: linear-gradient(rgba(0, 120, 255, .6), rgba(0, 120, 255, .6)), url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.contact-form button
+{
+    width: fit-content;
+}
+.touch .p1
+{
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 300;
+}
+.touch .icons i:hover {
+    color: white;
+    background-color: rgb(0, 120, 255);
+} 
+/*end contact
+/*start footer*/
+footer
+{
+    height: 20%;
+}
+/*end footer*/
+#myBtn {
+    display: none;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+  }
